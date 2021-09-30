@@ -36,12 +36,16 @@ describe('Indie', function () {
         contract.connect(addr1).mint(addr2.address, 401),
       ).to.be.revertedWith('Ownable: caller is not the owner')
     })
-    it.only('should enforce a max supply cap of 10M', async function () {
+    it('should enforce a max supply cap of 10M', async function () {
       // Mint total supply:
-      await contract.mint(addr1.address, '10000000'+'0'.repeat(18))
-      await expect(
-        contract.mint(addr1.address, 1)
-      ).to.be.revertedWith('ERC20Capped: cap exceeded')
+      await contract.mint(addr1.address, '10000000' + '0'.repeat(18))
+      await expect(contract.mint(addr1.address, 1)).to.be.revertedWith(
+        'ERC20Capped: cap exceeded',
+      )
+    })
+    it('should return cap getter', async function () {
+      const cap = await contract.cap()
+      expect(cap).to.equal(10000000 + '0'.repeat(18))
     })
   })
 
@@ -55,7 +59,7 @@ describe('Indie', function () {
       await contract.pause()
       // Attempt transfering after pause:
       await expect(
-        contract.connect(addr1).transfer(addr2.address, 1)
+        contract.connect(addr1).transfer(addr2.address, 1),
       ).to.be.revertedWith('ERC20Pausable: token transfer while paused')
       // Unpause transfers:
       await contract.unpause()
@@ -66,14 +70,14 @@ describe('Indie', function () {
       expect(addr2Balance).to.equal(2)
     })
     it('only allows owner to pause', async function () {
-      await expect(
-        contract.connect(addr1).pause()
-      ).to.be.revertedWith('Ownable: caller is not the owner')
+      await expect(contract.connect(addr1).pause()).to.be.revertedWith(
+        'Ownable: caller is not the owner',
+      )
     })
     it('only allows owner to unpause', async function () {
-      await expect(
-        contract.connect(addr1).unpause()
-      ).to.be.revertedWith('Ownable: caller is not the owner')
+      await expect(contract.connect(addr1).unpause()).to.be.revertedWith(
+        'Ownable: caller is not the owner',
+      )
     })
   })
 })
