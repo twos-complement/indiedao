@@ -1,15 +1,16 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-
 import IndieTokenHoldersList from '../components/IndieTokenHoldersList'
+
+import MilestoneMintForm from '../components/MilestoneMintForm'
 import Footer from '../components/ui/Footer'
 import { H1 } from '../components/ui/Typography'
 
-const Home = () => (
+const AdminPage = () => (
   <Wrapper>
     <Head>
       {/* Base: */}
-      <title>IndieDAO</title>
+      <title>Admin | IndieDAO</title>
       <link rel="icon" href="/favicon.png" />
       <meta name="description" content="IndieDAO" />
       {/* Twitter: */}
@@ -36,7 +37,9 @@ const Home = () => (
     </Head>
     <main>
       <Layout>
-        <H1>Token Holders</H1>
+        <H1>Mint Tokens</H1>
+        <MilestoneMintForm />
+        <H1>Existing Token Holders</H1>
         <IndieTokenHoldersList />
         <Footer />
       </Layout>
@@ -56,4 +59,4 @@ const Layout = styled.div`
   grid-row-gap: 40px;
 `
 
-export default Home
+export default AdminPage

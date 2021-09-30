@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import { IndieAddress } from '../../util/constants'
 import { A } from './Typography'
 
 const Wrapper = styled.div`
@@ -17,11 +18,15 @@ const Footer = () => (
       @theindiedao
     </A>
     <span>|</span>
+    <A href="https://2c.io/indiedao" target="_blank">
+      read more
+    </A>
+    <span>|</span>
     <A
-      href="https://2c.io/indiedao"
+      href={`https://etherscan.io/token/${IndieAddress}#balances`}
       target="_blank"
     >
-      read more
+      etherscan
     </A>
   </Wrapper>
 )

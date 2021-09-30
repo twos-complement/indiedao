@@ -1,9 +1,14 @@
 import styled from 'styled-components'
-import { useEthers, useLookupAddress, shortenAddress } from '@usedapp/core'
+import Link from 'next/link'
 
 import { H1 } from '../../components/ui/Typography'
-import { useRouter } from 'next/router'
-import Link from 'next/link'
+import useWeb3 from '../../components/hooks/useWeb3'
+import { Button } from '../../components/ui/Buttons'
+
+function maskAddress(address) {
+  if (!address) return
+  return `${address.slice(0, 6)}...${address.slice(-4)}`
+}
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,38 +16,27 @@ const Wrapper = styled.div`
   padding: 20px;
 `
 
-const ConnectButton = styled.div`
-  padding: 20px;
-  border-radius: 16px;
-  cursor: pointer;
-  background-color: ${props => props.theme.colors.secondary100};
-  font-family: 'Matter';
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
-  transition: all 500ms;
-
-  &:hover {
-    background-color: ${props => props.theme.colors.secondary100};
-  }
+const ButtonWrapper = styled.div`
+  width: 200px;
 `
 
 const Nav = () => {
-  const { activateBrowserWallet, account } = useEthers()
-  const address =
-    useLookupAddress() || (account ? shortenAddress(account) : false)
-
-  const router = useRouter()
+  const { connect, disconnect, accounts } = useWeb3()
+  const connected = accounts.length > 0
 
   return (
     <Wrapper>
       <Link href="/">
-        <H1>IndieDAO</H1>
+        <a>
+          <H1>IndieDAO</H1>
+        </a>
       </Link>
-      <ConnectButton onClick={activateBrowserWallet}>
-        {address && address}
-        {!address && 'Connect'}
-      </ConnectButton>
+      <ButtonWrapper>
+        {!connected && <Button onClick={connect}>Connect Wallet</Button>}
+        {connected && (
+          <Button onClick={disconnect}>{maskAddress(accounts[0])}</Button>
+        )}
+      </ButtonWrapper>
     </Wrapper>
   )
 }

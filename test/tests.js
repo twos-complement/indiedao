@@ -1,5 +1,5 @@
 const { expect } = require('chai')
-const { waffle, ethers } = require('hardhat')
+const { ethers } = require('hardhat')
 
 let contract, owner, addr1
 

@@ -16,7 +16,7 @@ export const H1 = styled.h1`
   ${H1Styles};
 `
 H1.propTypes = { ...propTypesColor }
-H1.defaultProps = { color: 'light' }
+H1.defaultProps = { color: 'primary900' }
 
 export const H2Styles = css`
   font-family: 'Matter';
@@ -24,7 +24,7 @@ export const H2Styles = css`
   font-size: 8rem;
   line-height: 7rem;
   margin: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 export const H2 = styled.h2`
   ${H2Styles}
@@ -36,7 +36,7 @@ export const H3Styles = css`
   font-size: 4.8rem;
   line-height: 4.8rem;
   margin: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 export const H3 = styled.h3`
   ${H3Styles}
@@ -48,7 +48,7 @@ export const H4Styles = css`
   font-size: 3.6rem;
   line-height: 3.6rem;
   margin: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 export const H4 = styled.h4`
   ${H4Styles}
@@ -60,7 +60,7 @@ export const H5Styles = css`
   font-size: 2.4rem;
   line-height: 2.4rem;
   margin: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 export const H5 = styled.h5`
   ${H5Styles}
@@ -72,7 +72,7 @@ export const H6Styles = css`
   font-size: 1.8rem;
   line-height: 2.2rem;
   margin: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 export const H6 = styled.h6`
   ${H6Styles}
@@ -85,18 +85,18 @@ export const PStyles = css`
   line-height: 2rem;
   margin: 0;
   padding: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 export const Body1 = styled.p`
   ${PStyles}
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 
 export const Body2 = styled.p`
   ${PStyles}
   font-size: 1.3rem;
   line-height: 1.8rem;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 
 export const Caption = styled.p`
@@ -114,7 +114,7 @@ export const Overline1 = styled.p`
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 
 export const Overline2 = styled.p`
@@ -126,7 +126,7 @@ export const Overline2 = styled.p`
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 
 export const AStyles = css`
@@ -146,7 +146,7 @@ export const AStyles = css`
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  color: ${props => props.theme.colors[props.color || 'light']};
+  color: ${props => props.theme.colors[props.color || 'primary900']};
 `
 
 export const A = styled.a`

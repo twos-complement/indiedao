@@ -1,22 +1,10 @@
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 
+import { Web3Provider } from '../components/contexts/Web3Context'
 import theme from '../util/theme'
 import GlobalStyles from '../components/ui/GlobalStyles'
 import Web3Layout from '../components/layouts/Web3Layout'
-
-import { ChainId, DAppProvider } from '@usedapp/core'
-
-const config = {
-  readOnlyChainId:
-    process.env.NODE_ENV == 'development' ? ChainId.Rinkeby : ChainId.Mainnet,
-  readOnlyUrls: {
-    [ChainId.Rinkeby]:
-      'https://rinkeby.infura.io/v3/2066aac4b30348feb96e6b517c3c3df0',
-    [ChainId.Mainnet]:
-      'https://mainnet.infura.io/v3/2066aac4b30348feb96e6b517c3c3df0',
-  },
-}
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -30,11 +18,11 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <DAppProvider config={config}>
+        <Web3Provider>
           <Web3Layout>
             <Component {...pageProps} />
           </Web3Layout>
-        </DAppProvider>
+        </Web3Provider>
       </ThemeProvider>
     </>
   )
