@@ -40,7 +40,11 @@ const IndieTokenHoldersList = () => {
             <ListItem key={address}>
               <H6 color="base600">
                 {address}:{' '}
-                <Highlight>{toFullTokenAmount(balances[address])}</Highlight>
+                <Highlight>
+                  {Number(
+                    toFullTokenAmount(balances[address]),
+                  ).toLocaleString()}
+                </Highlight>
               </H6>
             </ListItem>
           ))}
@@ -50,7 +54,9 @@ const IndieTokenHoldersList = () => {
   )
 }
 
-const Layout = styled.div``
+const Layout = styled.div`
+  padding-bottom: 80px;
+`
 
 const List = styled.ul`
   list-style: none;
