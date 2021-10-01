@@ -25,16 +25,20 @@ const Footer = () => (
       @theindiedao
     </A>
     <span>|</span>
-    <A href="https://2c.io/indiedao" target="_blank" color="white">
-      read more
-    </A>
-    <span>|</span>
     <A
       href={`https://etherscan.io/token/${IndieAddress}#balances`}
       target="_blank"
       color="white"
     >
-      etherscan
+      $INDIE
+    </A>
+    <span>|</span>
+    <A
+      href="https://etherscan.io/address/0x762C0cefBdC51D3ca0553b81792D82fcA96EF7a3"
+      target="_blank"
+      color="white"
+    >
+      IndieDAO Multi-Sig
     </A>
   </Wrapper>
 )

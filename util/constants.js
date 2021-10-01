@@ -1,5 +1,5 @@
 export const InfuraId = '93f9f967be47488bb38feb8d6e0f2222' // 2C / IndieDAO
-export const IndieAddress = '0x6144544189CD8069aD5748173730be2782E8cfc5'
+export const IndieAddress = '0xE9f8814A7f31C861Aa314D5d72Fce484eb13d2E4'
 
 export const Milestone0Mints = {
   '0x99b9bB23D300Dda4A1dC9eb8d2333704b235c165': 1000, // nico main

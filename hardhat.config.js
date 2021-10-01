@@ -35,7 +35,7 @@ module.exports = {
     mainnet: {
       url: process.env.MAINNET_GATEWAY,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
-      gasPrice: 100000000000, // 100gwei
+      gasPrice: 90000000000, // 90gwei
     },
   },
   etherscan: {
