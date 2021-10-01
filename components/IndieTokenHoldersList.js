@@ -33,8 +33,8 @@ const IndieTokenHoldersList = () => {
   return (
     <Layout>
       {accounts.length == 0 && <Body1>(please connect to wallet)</Body1>}
-      {accounts.length && loading && <Body1>Loading...</Body1>}
-      {accounts.length && !loading && (
+      {accounts.length > 0 && loading && <Body1>Loading...</Body1>}
+      {accounts.length > 0 && !loading && (
         <List>
           {Object.keys(balances).map(address => (
             <ListItem key={address}>
