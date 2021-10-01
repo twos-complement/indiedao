@@ -37,9 +37,10 @@ const Home = () => (
     <main>
       <Layout>
         <H1>Token Holders</H1>
+        <Star height={60} src="/images/star.svg" />
         <IndieTokenHoldersList />
-        <Footer />
       </Layout>
+      <Footer />
     </main>
   </Wrapper>
 )
@@ -47,13 +48,18 @@ const Home = () => (
 const Wrapper = styled.div``
 
 const Layout = styled.div`
-  padding-top: 80px;
+  padding: 80px 20px 20px;
   margin: 0 auto;
   max-width: 900px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 40px;
+  text-align: center;
+`
+
+const Star = styled.img`
+  margin: 0 auto;
 `
 
 export default Home

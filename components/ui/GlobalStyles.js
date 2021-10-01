@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   html, body {
     padding: 0;
     margin: 0;
-    background-color: ${props => props.theme.colors.primary100};
+    background-color: ${props => props.theme.colors.base100};
     color: ${props => props.theme.colors.primary100};
     font-size: 62.5%; /* base 10 rems */
     min-height: 100vh;

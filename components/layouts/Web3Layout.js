@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
-  border: 12px solid gray;
+  border: 12px solid ${props => props.theme.colors.base900};
 `
 
 const Web3Layout = ({ children }) => {
