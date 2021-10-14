@@ -1,6 +1,4 @@
-# ISSUE_TEMPLATE/bugreport.md
-
-[Untitled](https://www.notion.so/6aefbc7f0e744f1190d85cfcaa92c6db)
+# Issues/bug-report.md
 
 ### **Prerequisites**
 

@@ -1,4 +1,4 @@
-# PULL_REQUEST_TEMPLATE/bugfixing.md
+# pull-request/bug-fixing.md
 
 ### **Requirements for Contributing a Bug Fix**
 

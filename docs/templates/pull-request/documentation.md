@@ -1,4 +1,4 @@
-# PULL_REQUEST_TEMPLATE/documentation.md
+# pull-request/documentation.md
 
 ### **Requirements for Contributing Documentation**
 
