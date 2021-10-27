@@ -10,32 +10,32 @@ The following is a set of guidelines for contributing to the 2C DAO Website. The
 
 ### 🐞 Reporting bugs🐞
 
-This section guides you through submitting a bug report for the 2C DAO Website. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior , and find related reports.
+This section guides you through submitting a bug report for the 2C DAO Website. Following these guidelines helps maintainers and the community understand your report, reproduce the behavior, and find related reports.
 
 - Before submitting a bug please check the list of [open issues](https://github.com/twos-complement/indiedao/issues) to avoid duplicates.
 - Please use this template to create a new issue.
-- Include details about your configuration and environment (web browser, OS, device)
+- Include details about your configuration and environment (web browser, OS, device, etc...)
 
 ### 💡Suggesting Enhancements💡
 
 This section guides you through submitting an enhancement suggestion for the 2C DAO Website, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
-- Before creating enhancement suggestions, please check this list as you might find out that you don't need to create one.
+- Before creating enhancement suggestions, please check the current [enhancements list](https://github.com/twos-complement/indiedao/labels/enhancement) please check this list as you might find out that you don't need to create one.
 - When you are creating an enhancement suggestion, please include as many details as possible.
-- Fill in the template, including the steps that you imagine you would take if the feature you're requesting existed.
+- Fill in the form, including the steps that you imagine you would take if the feature you're requesting existed.
 - **Use a clear and descriptive title** for the issue to identify the suggestion.
 - **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
 - List some other text websites or applications where this enhancement exists.
-- Attend our Builders Working Group so you can explain better your proposal.
+- Attend our Builders Working Group so you can better explain your proposal.
 
 ### 🐣Your First Code Contribution🐣
 
 Unsure where to begin contributing to the 2C DAO Website? You can start by looking through these [beginner](https://github.com/twos-complement/indiedao/labels/beginner) and [help-wanted](https://github.com/twos-complement/indiedao/labels/help-wanted) issues:
 
-- Beginner Issues - issues which should only require a few lines of code, and a test or two.
-- Help Wanted Issues - issues which should be a bit more involved than `beginner` issues.
+- [Beginner Issues](https://github.com/twos-complement/indiedao/labels/good%20first%20issue) - issues which should only require a few lines of code, and a test or two.
+- [Help Wanted Issues](https://github.com/twos-complement/indiedao/labels/help%20wanted) - issues which should be a bit more involved than `beginner` issues.
 
-Both issue lists are sorted by total number of comments. While not perfect, number of comments is a reasonable proxy for impact a given change will have.
+Both issue lists are sorted by total number of comments. While not perfect, number of comments is a reasonable proxy for the impact a given change will have.
 
 ### **Pull Requests**
 
@@ -52,7 +52,7 @@ For commits please follow this [styleguide](https://www.conventionalcommits.org/
 
 ### Builders Working Group Call
 
-This is our weekly session where we discuss about enhacements, internal projects and opportunities
+This is our weekly session at IndieDAO Discord voice channel where we discuss about enhacements, internal projects and opportunities
 
 ### Issue Creation Templates
 
