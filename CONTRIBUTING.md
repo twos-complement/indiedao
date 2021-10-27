@@ -30,7 +30,7 @@ This section guides you through submitting an enhancement suggestion for the 2C 
 
 ### 🐣Your First Code Contribution🐣
 
-Unsure where to begin contributing to the 2C DAO Website? You can start by looking through these `beginner` and `help-wanted` issues:
+Unsure where to begin contributing to the 2C DAO Website? You can start by looking through these [beginner](https://github.com/twos-complement/indiedao/labels/beginner) and [help-wanted](https://github.com/twos-complement/indiedao/labels/help-wanted) issues:
 
 - Beginner Issues - issues which should only require a few lines of code, and a test or two.
 - Help Wanted Issues - issues which should be a bit more involved than `beginner` issues.
