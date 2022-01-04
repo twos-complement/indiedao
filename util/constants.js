@@ -26,4 +26,5 @@ export const Milestone0Mints = {
   '0xb7e374B882fc6B79543A8f4B107bfe2Ca6317629': 6371, // mike
   '0xF2feBb37DaDfBe942c0675EBafB1A937f7942De1': 20024, // taylor
   '0x2CAf9e180edA39d441484f071b1454505daf3fE6': 1383, // luciana
+  '0x762C0cefBdC51D3ca0553b81792D82fcA96EF7a3': 9000000, // IndieDAO Multi-Sig
 }
